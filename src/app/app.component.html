@@ -20,6 +20,7 @@
 </form>
 <hr>
 
-<app-studentapp *ngFor="let ob of students" [student]="ob">
+<app-studentapp *ngFor="let ob of students" [student]="ob"
+(delStud)="deleteStudent($event)">
 
 </app-studentapp>

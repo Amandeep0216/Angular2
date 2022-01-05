@@ -10,6 +10,11 @@ import { NgForm } from '@angular/forms';
 export class AppComponent {
   public students:any = []
 
+  public deleteStudent(roll:String)
+  {
+    this.students = this.students.filter((ob:any)=>ob.roll!=roll)
+  }
+
   public send(frm:NgForm)
   {
     this.students.push(frm.value)
